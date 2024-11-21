@@ -1,0 +1,159 @@
+:root {
+  --primary: #633337;
+  --bg: #010101;
+  --navbar-bg: rgba(1, 1, 1, 0.8); /* New variable */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins, sans-serif";
+  background-color: var(--bg);
+  color: #fff;
+  min-height: 3000px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4 7%;
+  background-color: var(--navbar-bg); /* Use of new variable */
+  border-bottom: 1px solid #633337;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+
+.navbar .icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .icons a:hover {
+  color: var(--primary);
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); /* Fixed text-shadow */
+  mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); /* Fixed box-shadow */
+}
+
+.deskripsi {
+  padding: 8rem 7% 1.4rem;
+}
+
+.deskripsi h2,
+.pembicara h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.deskripsi h2 span,
+.pembicara h2 span {
+  color: var(--primary);
+}
+
+.deskripsi .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deskripsi .row .about-img {
+  flex: 0 1 50%;
+}
+
+.deskripsi .row .about-img img {
+  width: 100%;
+}
+
+.deskripsi .row .content {
+  flex: 0 1 50%;
+  padding: 0 1rem;
+}
+
+.deskripsi .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.deskripsi .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
+  width: 150px;
+}
+
+.pembicara {
+  padding: 5rem 7% 1.4rem;
+}
+
+.pembicara h2 {
+  margin-bottom: none;
+}
